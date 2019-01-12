@@ -53,7 +53,7 @@ function getNumber(text) {
     do {
         number = parseFloat(prompt(text));
         if (isNaN(number)) {
-            alert('Неккоректные данные. Введите цифры')
+            alert('Некоректные данные. Введите цифры')
         }
     } while (isNaN(number))
     console.log(`${text} ${number}`)
