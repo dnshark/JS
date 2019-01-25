@@ -1,3 +1,4 @@
+console.log("------------4--------");
 function isNumberInRange(num) {
     return num > 0 && num < 10
 }

@@ -1,3 +1,4 @@
+console.log("------------3--------");
 function sum(arr) {
     return Array.isArray(arr) ? arr.reduce((acc, item) => acc + sum(item), 0) : arr;
 }

@@ -1,3 +1,4 @@
+console.log("------------8--------");
 function fillArr(length, func) {
     const arr = new Array(length);
     for (let i = 1; i <= length; i++) {

@@ -1,3 +1,4 @@
+console.log("------------6--------");
 function evenArr(arr) {
     return arr.filter(isEven)
 }

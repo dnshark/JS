@@ -1,3 +1,4 @@
+console.log("------------7--------");
 function deviders(num) {
     let result = [];
     for (let i = 2; i<=num; i++) {

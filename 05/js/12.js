@@ -1,3 +1,4 @@
+console.log("------------12--------");
 function arrLength(arr) {
     return !arr ? "Сообщение об ошибке" : arr.length
 }

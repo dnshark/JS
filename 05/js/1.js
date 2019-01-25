@@ -1,3 +1,4 @@
+console.log("------------1--------");
 function arrayFill(str, num) {
     const res = [];
     res.length = num;
