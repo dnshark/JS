@@ -27,11 +27,25 @@ const diagonal = (x, y, length) => {
         return 6;
 }
 
-//TODO
-const pascal = (x, y, length) => {
+const pascal = (length) => {
+    const initValue = (arr, indexRow, indexCol) => {
+        if (indexRow === 0 || indexCol === 0 || indexCol === arr[indexRow].length - 1) {
+            return 1;
+        }
+        return arr[indexRow - 1][indexCol - 1] + arr[indexRow - 1][indexCol];
+    }
 
+    const arr = new Array(length);
+    for (let i = 0; i < length; i++) {
+        arr[i] = new Array(i + 1);
+        for (let j = 0; j < arr[i].length; j++) {
+            arr[i][j] = initValue(arr, i, j)
+        }
+    }
+    return arr;
 }
 
 console.log(fillArr(10, multi));
 console.log(fillArr(10, diagonal));
+console.log(pascal(10));
 
